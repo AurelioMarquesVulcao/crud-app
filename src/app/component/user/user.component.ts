@@ -1,0 +1,35 @@
+import { Component, OnInit } from '@angular/core';
+import { UserApiService } from './../../sevices/user-api.service';
+import { Data, User } from './../../models/user-data.model';
+
+@Component({
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css']
+})
+export class UserComponent implements OnInit {
+  users: User[] = [];
+
+  constructor(private UserApiService: UserApiService) {
+  }
+
+  ngOnInit() {
+    this.getter();
+  }
+
+  getter() {
+    this.UserApiService.getuser().subscribe(
+      (data: Data) => {
+      console.log('Data', data);
+      this.users = data.data;
+    },
+    (error: any) => {
+      // this.erro = error;
+      console.error('ERROR: ', error);
+    })
+  }
+
+  register() {
+    console.log("Voce clicou no botao")
+  }
+}
