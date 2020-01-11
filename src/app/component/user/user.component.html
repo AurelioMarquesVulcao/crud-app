@@ -1,18 +1,54 @@
-<table class="table">
+<table class="table ">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">id</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">email</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor='let user of users'>
       <th scope="row">{{user.id}}</th>
-    <td><a [href]="user.id">{{user.first_name}}</a></td>
-    <td>{{user.last_name}}</td>
-    <td>{{user.email}}</td>
-    </tbody>
+    <td ><a [href]="user.id">{{user.first_name}} {{user.last_name}}</a></td>
+    <td>editar</td>
+    <td class="text-danger">excluir</td>
+
+    <tr *ngFor='let user of users2'>
+      <th scope="row">{{user.id}}</th>
+      <td ><a [href]="user.id">{{user.first_name}} {{user.last_name}}</a></td>
+    <td>editar</td>
+    <td class="text-danger">excluir</td>
+
+  </tbody>
+
 </table>
 
+<!-- <table class="table ">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let user of users'>
+      <th scope="row">{{user.id}}</th>
+    <td ><a [href]="user.id">{{user.first_name}}</a></td>
+    <td >{{user.last_name}}</td>
+    <td>editar</td>
+    <td class="text-danger">excluir</td>
+
+    <tr *ngFor='let user of users2'>
+      <th scope="row">{{user.id}}</th>
+    <td><a [href]="user.id">{{user.first_name}}</a></td>
+    <td>{{user.last_name}}</td>
+    <td>editar</td>
+    <td class="text-danger">excluir</td>
+
+  </tbody>
+
+</table> -->

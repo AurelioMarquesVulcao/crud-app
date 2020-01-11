@@ -9,12 +9,14 @@ import { Data, User } from './../../models/user-data.model';
 })
 export class UserComponent implements OnInit {
   users: User[] = [];
+  users2: User[] = [];
 
   constructor(private UserApiService: UserApiService) {
   }
 
   ngOnInit() {
     this.getter();
+    this.getter2();
   }
 
   getter() {
@@ -22,6 +24,17 @@ export class UserComponent implements OnInit {
       (data: Data) => {
       console.log('Data', data);
       this.users = data.data;
+    },
+    (error: any) => {
+      // this.erro = error;
+      console.error('ERROR: ', error);
+    })
+  }
+  getter2() {
+    this.UserApiService.getuser2().subscribe(
+      (data: Data) => {
+      console.log('Data', data);
+      this.users2 = data.data;
     },
     (error: any) => {
       // this.erro = error;

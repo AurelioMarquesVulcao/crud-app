@@ -1,16 +1,41 @@
+
+<form>
+  <p>first_name: <input type="text" name="first_name" [([(ngModel)]="users.first_name")]></p>
+  last_name:  <input type="text" name="last_name" [([(ngModel)]="users.last_name)]>
+  email:
+  avatar:
+</form>
+
+
+
+
+
+
+<!-- <table class="table">
+  <tbody>
+    <tr *ngFor='let user of users'>
+      <th scope="row">{{user.id}}</th>
+    <td>{{user.first_name}}</td>
+    <td>{{user.last_name}}</td>
+      <td>editar</td>
+      <td class="text-danger">excluir</td>
+    </tr>
+  </tbody>
+</table> -->
+
+
+<!--
 <table class="table">
   <tbody>
     <tr *ngFor='let user of users'>
       <th scope="row">{{user.id}}</th>
     <td>{{user.first_name}}</td>
     <td>{{user.last_name}}</td>
-    <td>{{user.email}}</td>
+      <td>editar</td>
+      <td class="text-danger">excluir</td>
     </tr>
   </tbody>
-</table>
-
-
-
+</table> -->
 
 <!--
 <div *ngFor='let user of users'>

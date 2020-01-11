@@ -13,6 +13,7 @@ import { UserDetailsComponent } from './component/user-details/user-details.comp
 import { HeaderComponent } from './component/header/header.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { UserDetails2Component } from './component/user-details2/user-details2.component';
+import { User1DetailComponent } from './component/user1-detail/user1-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UserDetails2Component } from './component/user-details2/user-details2.c
     HeaderComponent,
     DetailComponent,
     UserDetails2Component,
+    User1DetailComponent,
 
   ],
   imports: [
@@ -33,7 +35,7 @@ import { UserDetails2Component } from './component/user-details2/user-details2.c
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
