@@ -10,8 +10,9 @@
   <tbody>
     <tr *ngFor='let user of users'>
       <th scope="row">{{user.id}}</th>
-    <td>{{user.first_name}}</td>
+    <td><a [href]="user.id">{{user.first_name}}</a></td>
     <td>{{user.last_name}}</td>
     <td>{{user.email}}</td>
     </tbody>
 </table>
+

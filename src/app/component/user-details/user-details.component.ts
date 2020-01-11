@@ -10,6 +10,7 @@ import { Data, User } from './../../models/user-data.model';
 export class UserDetailsComponent implements OnInit {
   users: User[] = [];
 
+  // tslint:disable-next-line: no-shadowed-variable
   constructor(private UserApiService: UserApiService) {
   }
 
