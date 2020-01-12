@@ -28,6 +28,9 @@ export class User2Component implements OnInit {
       console.error('ERROR: ', error);
     })
   }
+  post(){
+    this.users
+  }
 
   register() {
     console.log("Voce clicou no botao")

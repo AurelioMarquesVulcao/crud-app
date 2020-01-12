@@ -1,3 +1,5 @@
+// Allows you to search the list of users,
+//and details like photo, email and full name.
 export class User {
   id?: number;
   email: string;
@@ -17,5 +19,9 @@ export interface Data {
  total: number;
  data: User[];
 }
- 
 
+// To use the api, update, delete and create
+export class Usernamejob {
+  name: string;
+  job: string;
+}

@@ -5,6 +5,7 @@ import { UserDetailsComponent } from './component/user-details/user-details.comp
 import { LoginComponent } from './component/login/login.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { User1DetailComponent } from './component/user1-detail/user1-detail.component';
+import { User2Component } from './component/user2/user2.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
 {path: 'detail', component: DetailComponent},
 {path: '4', component: DetailComponent},
 {path: '1', component: User1DetailComponent},
+{path: 'new', component: User2Component},
 ];
 
 @NgModule({
