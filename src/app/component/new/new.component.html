@@ -1,7 +1,12 @@
 <p>new works!</p>
 
 <form>
-  <!-- <p>Name: <input type="text" name="name" [(ngModel)]="binding"></p> -->
-  <p>Job: <input type="text" name="job"></p>
+<p>Name: <input type="text" name="name" [(ngModel)]="user.name"></p>
+<p>Job: <input type="text" name="job" [(ngModel)]="user.job"></p>
+<p>
+  <button type="button" (click) = "add()">Add</button>
+</p>
+
+
 
 </form>

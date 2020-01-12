@@ -33,6 +33,6 @@ export class User2Component implements OnInit {
   }
 
   register() {
-    console.log("Voce clicou no botao")
+    console.log("")
   }
 }

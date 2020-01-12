@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { UserDetails2Component } from './component/user-details2/user-details2.c
 import { User1DetailComponent } from './component/user1-detail/user1-detail.component';
 import { UpdateComponent } from './component/update/update.component';
 import { NewComponent } from './component/new/new.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { NewComponent } from './component/new/new.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [HttpClient, HttpClientModule],
   bootstrap: [AppComponent]

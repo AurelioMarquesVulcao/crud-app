@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserApiService } from './../../sevices/user-api.service';
+import { Usernamejob } from 'src/app/models/user-data.model';
 
 @Component({
   selector: 'app-new',
@@ -7,11 +8,23 @@ import { UserApiService } from './../../sevices/user-api.service';
   styleUrls: ['./new.component.css']
 })
 export class NewComponent implements OnInit {
+  user: Usernamejob = new Usernamejob(); //insert any for any problem
 
-  constructor() { }
+  constructor(private UserApiService: UserApiService) { }
 
   ngOnInit() {
+    this.add();
+  }
+  add(){
+    console.log(this.user);
+    this.UserApiService.postuser(this.user).subscribe(
+      user => {
+        console.log(user);
+        this.user = new Usernamejob();
+      },
+      (error: any) => {
+        console.error('ERROR: ', error);
+      });
 
   }
-
 }

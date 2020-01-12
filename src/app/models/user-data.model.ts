@@ -24,4 +24,6 @@ export interface Data {
 export class Usernamejob {
   name: string;
   job: string;
+  id: number;
+  createdat: any;
 }
