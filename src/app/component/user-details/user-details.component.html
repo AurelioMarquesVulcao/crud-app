@@ -1,5 +1,12 @@
-<h1>{{users}}</h1>
-<h1>oi</h1>
+<div class="media container mt-4">
+   <img class="card-img-top fuid circle mr-3" alt="10" [src]="user.avatar"/>
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+
+
 <div class="container mt-4">
   <div *ngFor='let user of users'>
     <div class="col-sm-6 col-md-4 mb-4">
@@ -12,10 +19,6 @@
           <li class="list-group-item">Id-User: {{user.id}}</li>
           <li class="list-group-item">{{user.email}}</li>
         </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Delete User</a>
-          <a href="#" class="card-link">Refresh User</a>
-      </div>
     </div>
   </div>
   </div>

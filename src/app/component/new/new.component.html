@@ -1,12 +1,50 @@
-<p>new works!</p>
+<h2>New User</h2>
 
 <form>
 <p>Name: <input type="text" name="name" [(ngModel)]="user.name"></p>
 <p>Job: <input type="text" name="job" [(ngModel)]="user.job"></p>
-<p>
+<div>
   <button type="button" (click) = "add()">Add</button>
-</p>
-
-
-
+</div>
 </form>
+
+<h2>Update</h2>
+<form>
+  <p>id: <input type="text" name="name"[(ngModel)]="user.id"></p>
+  <p>Name: <input type="text" name="name"[(ngModel)]="user.name"></p>
+  <p>Job: <input type="text" name="job"[(ngModel)]="user.job"></p>
+  <div>
+    <button type="button" (click) = "update()">Add</button>
+  </div>
+</form>
+
+<h2>Delete</h2>
+<form>
+  <p>id: <input type="text" name="name"[(ngModel)]="user.id"></p>
+  <div>
+    <button type="button" (click) = "delete()">Add</button>
+  </div>
+</form>
+
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+</div>
+
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+  </div>
+</div>

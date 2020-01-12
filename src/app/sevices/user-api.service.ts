@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Usernamejob } from '../models/user-data.model';
+import { Usernamejob, User } from '../models/user-data.model';
 // import { Data } from '../models/user-data.model';
 
 @Injectable({
@@ -20,10 +20,13 @@ export class UserApiService {
   public postuser(user: Usernamejob): Observable<any>{
     return this.http.post("https://reqres.in/api/users", user);
   }
-  public putuser(){
-
+  public putuser(id:any, user: Usernamejob): Observable<any>{
+    return this.http.put("https://reqres.in/api/users".concat(id), user);
   }
-  public deleteuser(){
-
+  public deleteuser(id:any): Observable<any>{
+    return this.http.delete("https://reqres.in/api/users".concat(id));
   }
+  public getoneuser(id:any, user: User): Observable<any>{
+    return this.http.put("https://reqres.in/api/users".concat(id), user);
+}
 }

@@ -41,8 +41,15 @@ export class UserComponent implements OnInit {
       console.error('ERROR: ', error);
     })
   }
+  detail(id: number) {
+    this.UserApiService.getoneuser(id, this.users).subscribe(
+      (data: Data) => {
+      console.log('Data', data);
+      this.users = data.data;
+    },
+    (error: any) => {
+      console.error('ERROR: ', error);
+    });
 
-  register() {
-    console.log("Voce clicou no botao")
   }
 }
