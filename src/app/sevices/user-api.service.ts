@@ -14,5 +14,14 @@ export class UserApiService {
   }
   public getuser2(): Observable<any>{
     return this.http.get("https://reqres.in/api/users?page=2");
-}
+  }
+  public postuser(): Observable<any>{
+    return this.http.post("https://reqres.in/api/users");
+  }
+  public putuser(): Observable<any>{
+    return this.http.put("https://reqres.in/api/users");
+  }
+  public deleteuser(): Observable<any>{
+    return this.http.delete("https://reqres.in/api/users");
+  }
 }

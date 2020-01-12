@@ -14,6 +14,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { UserDetails2Component } from './component/user-details2/user-details2.component';
 import { User1DetailComponent } from './component/user1-detail/user1-detail.component';
+import { UpdateComponent } from './component/update/update.component';
+import { NewComponent } from './component/new/new.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { User1DetailComponent } from './component/user1-detail/user1-detail.comp
     DetailComponent,
     UserDetails2Component,
     User1DetailComponent,
+    UpdateComponent,
+    NewComponent,
 
   ],
   imports: [
