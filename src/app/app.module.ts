@@ -18,6 +18,8 @@ import { User1DetailComponent } from './component/user1-detail/user1-detail.comp
 import { UpdateComponent } from './component/update/update.component';
 import { NewComponent } from './component/new/new.component';
 import { from } from 'rxjs';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { from } from 'rxjs';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CollapseModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [HttpClient, HttpClientModule],
   bootstrap: [AppComponent]

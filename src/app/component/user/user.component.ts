@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserApiService } from './../../sevices/user-api.service';
 import { Data, User } from './../../models/user-data.model';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @Component({
   selector: 'app-user',
@@ -40,16 +41,5 @@ export class UserComponent implements OnInit {
       // this.erro = error;
       console.error('ERROR: ', error);
     })
-  }
-  detail(id: number) {
-    this.UserApiService.getoneuser(id, this.users).subscribe(
-      (data: Data) => {
-      console.log('Data', data);
-      this.users = data.data;
-    },
-    (error: any) => {
-      console.error('ERROR: ', error);
-    });
-
   }
 }
