@@ -43,8 +43,8 @@ On the first screen, you will find the home prototype with:
 Username: @inchurch, password: God2020
 In the second screen, it is displayed in orderly list, the users provided by the API and through a button the details are displayed.
 
-<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/user.PNG?raw=true" height="250">
-<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/userDetails.PNG?raw=true" height="250">
+<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/user.PNG?raw=true" height="350">
+<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/userDetails.PNG?raw=true" height="350">
 
 Na última tela do API encontra-se as funções de: 
 * Novo Usuário
@@ -53,9 +53,9 @@ Na última tela do API encontra-se as funções de:
 
 Below are the functions and expected responses from the server.
 
-<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/addUser.PNG?raw=true" height="250">
-<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/updateUser.PNG?raw=true" height="250">
-<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/deleteUser.PNG?raw=true" height="250">
+<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/addUser.PNG?raw=true" height="350">
+<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/updateUser.PNG?raw=true" height="350">
+<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/deleteUser.PNG?raw=true" height="350">
 
 I applied Agile Methodology in order to equalize the demands and thus create a favorable scenario for creation and development.
 
