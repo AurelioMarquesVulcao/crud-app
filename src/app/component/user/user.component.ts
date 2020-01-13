@@ -24,24 +24,24 @@ export class UserComponent implements OnInit {
   getter() {
     this.UserApiService.getuser().subscribe(
       (data: Data) => {
-      console.log('Data', data);
-      this.users = data.data;
-    },
-    (error: any) => {
-      // this.erro = error;
-      console.error('ERROR: ', error);
-    })
+        console.log('Data', data);
+        this.users = data.data;
+      },
+      (error: any) => {
+        // this.erro = error;
+        console.error('ERROR: ', error);
+      })
   }
   getter2() {
     this.UserApiService.getuser2().subscribe(
       (data: Data) => {
-      console.log('Data', data);
-      this.users2 = data.data;
-    },
-    (error: any) => {
-      // this.erro = error;
-      console.error('ERROR: ', error);
-    })
+        console.log('Data', data);
+        this.users2 = data.data;
+      },
+      (error: any) => {
+        // this.erro = error;
+        console.error('ERROR: ', error);
+      })
   }
 }
-export class DemoModalStaticComponent {}
+export class DemoModalStaticComponent { }

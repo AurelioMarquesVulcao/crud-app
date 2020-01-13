@@ -13,11 +13,11 @@ export class User {
 }
 
 export interface Data {
- page: number;
- per_page: number;
- total_pages: number;
- total: number;
- data: User[];
+  page: number;
+  per_page: number;
+  total_pages: number;
+  total: number;
+  data: User[];
 }
 
 // To use the api, update, delete and create

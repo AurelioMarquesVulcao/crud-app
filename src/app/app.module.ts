@@ -10,7 +10,6 @@ import { UserPagesComponent } from './pages/user-pages/user-pages.component';
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 
-import { UpdateComponent } from './component/update/update.component';
 import { NewComponent } from './component/new/new.component';
 import { from } from 'rxjs';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -28,7 +27,6 @@ import { EdituserComponent } from './pages/edituser/edituser.component';
     UserPagesComponent,
     LoginComponent,
     HeaderComponent,
-    UpdateComponent,
     NewComponent,
     FooterComponent,
     HeaderloginComponent,

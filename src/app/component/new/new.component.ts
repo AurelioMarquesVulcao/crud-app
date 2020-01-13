@@ -14,37 +14,37 @@ export class NewComponent implements OnInit {
 
   ngOnInit() {
   }
-  add(){
+  add() {
     console.log(this.user);
     this.UserApiService.postuser(this.user).subscribe(
       user => {
-      console.log(user);
-      this.user = new Usernamejob();
-    },
-    (error: any) => {
-      console.error('ERROR: ', error);
-    });
+        console.log(user);
+        this.user = new Usernamejob();
+      },
+      (error: any) => {
+        console.error('ERROR: ', error);
+      });
   }
   update(id: number) {
     console.log(this.user);
     this.UserApiService.putuser(id, this.user).subscribe(
       user => {
-      console.log(user);
-      this.user = new Usernamejob();
-    },
-    (error: any) => {
-      console.error('ERROR: ', error);
-    });
+        console.log(user);
+        this.user = new Usernamejob();
+      },
+      (error: any) => {
+        console.error('ERROR: ', error);
+      });
   }
-  delete(id:number) {
+  delete(id: number) {
     console.log(this.user);
     this.UserApiService.deleteuser(id).subscribe(
       user => {
-      console.log(user);
-      this.user = new Usernamejob();
-    },
-    (error: any) => {
-      console.error('ERROR: ', error);
-    });
+        console.log(user);
+        this.user = new Usernamejob();
+      },
+      (error: any) => {
+        console.error('ERROR: ', error);
+      });
   }
 }
