@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { UserApiService } from './../../sevices/user-api.service';
 import { Data, User } from './../../models/user-data.model';
-import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
+
 })
 export class UserComponent implements OnInit {
   users: User[] = [];
@@ -43,3 +44,4 @@ export class UserComponent implements OnInit {
     })
   }
 }
+export class DemoModalStaticComponent {}
