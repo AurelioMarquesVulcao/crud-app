@@ -7,13 +7,9 @@ import { AppComponent } from './app.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { UserComponent } from './component/user/user.component';
 import { UserPagesComponent } from './pages/user-pages/user-pages.component';
-import { User2Component } from './component/user2/user2.component';
 import { LoginComponent } from './component/login/login.component';
-import { UserDetailsComponent } from './component/user-details/user-details.component';
 import { HeaderComponent } from './component/header/header.component';
 
-import { UserDetails2Component } from './component/user-details2/user-details2.component';
-import { User1DetailComponent } from './component/user1-detail/user1-detail.component';
 import { UpdateComponent } from './component/update/update.component';
 import { NewComponent } from './component/new/new.component';
 import { from } from 'rxjs';
@@ -22,21 +18,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FooterComponent } from './component/footer/footer.component';
+import { HeaderloginComponent } from './component/headerlogin/headerlogin.component';
+import { EdituserComponent } from './pages/edituser/edituser.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     UserPagesComponent,
-    User2Component,
     LoginComponent,
-    UserDetailsComponent,
     HeaderComponent,
-    UserDetails2Component,
-    User1DetailComponent,
     UpdateComponent,
     NewComponent,
     FooterComponent,
+    HeaderloginComponent,
+    EdituserComponent,
 
   ],
   imports: [
