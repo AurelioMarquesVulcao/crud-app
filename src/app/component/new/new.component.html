@@ -4,34 +4,75 @@
     <div class="card">
       <!-- Start Add User -->
       <div class="card-body  mx-auto">
-        <h4 class="card-title">Teste01</h4>
+        <h4 class="card-title">Add New User</h4>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">teste02</li>
-        <li class="list-group-item">Teste03</li>
+        
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="name" [(ngModel)]="user.name" type="text" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="job" [(ngModel)]="user.job" type="text" class="form-control" placeholder="Job" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button (click) = "add()" class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+            </div>
+          </div>
+        </li>
+      
       </ul>
       <!-- End Add User -->
       <!-- Start Update User -->
       <div class="card-body  mx-auto">
-        <h4 class="card-title">Teste01</h4>
+        <h4 class="card-title">Update User by ID</h4>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">teste02</li>
-        <li class="list-group-item">Teste03</li>
+      
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="name"[(ngModel)]="user.id" type="text" class="form-control" placeholder="ID" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="name"[(ngModel)]="user.name" type="text" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="job"[(ngModel)]="user.job" type="text" class="form-control" placeholder="Job" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button (click) = "update()" class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </li>
       </ul>
       <!-- End Update User -->
       <!-- Start Delete User -->
       <div class="card-body  mx-auto">
-        <h4 class="card-title">Teste01</h4>
+        <h4 class="card-title">Delete User by ID</h4>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">teste02</li>
-        <li class="list-group-item">Teste03</li>
+        
+        <li class="list-group-item">
+
+          <div class="input-group mb-2">
+            <input name="id"[(ngModel)]="user.id" type="text" class="form-control" placeholder="User ID To Delete" aria-label="Recipient's username" aria-describedby="button-addon2" >
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click) = "delete()" >Delete</button>
+            </div>
+          </div>
+
+        </li>
       </ul>
       <!-- End Delete User -->
   </div>
 </div>
 
+<!-- Keep this code to guide future changes.
+The code below is API consumption without Bootstrap CSS. -->
 
 <!-- <h2>New User</h2>
 
@@ -55,7 +96,7 @@
 
 <h2>Delete</h2>
 <form>
-  <p>id: <input type="text" name="name"[(ngModel)]="user.id"></p>
+  <p>id: <input type="text" name="id"[(ngModel)]="user.id"></p>
   <div>
     <button type="button" (click) = "delete()">Add</button>
   </div>
