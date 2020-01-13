@@ -1,16 +1,16 @@
 <table class="table">
   <thead class="thead-dark">
-    <tr>
+    <tr align="center">
       <th scope="col">id</th>
       <th scope="col">Name</th>
       <th scope="col">Detail</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor='let user of users'>
-    <th scope="row">{{user.id}}</th>
-      <td>{{user.first_name}} {{user.last_name}}</td>
-      <td>
+    <tr *ngFor='let user of users' align="center">
+    <th scope="row" cla>{{user.id}}</th>
+    <td>{{user.first_name}} {{user.last_name}}</td>
+    <td>
         <!-- start Static modal -->
 
         <button type="button" class="btn btn-primary" (click)="staticModal.show()">Detail</button>
@@ -55,10 +55,10 @@
     </tr>
 
     <!-- Second page users -->
-    <tr *ngFor='let user of users2'>
+    <tr *ngFor='let user of users2' align="center">
       <th scope="row">{{user.id}}</th>
-        <td>{{user.first_name}} {{user.last_name}}</td>
-        <td>
+        <td >{{user.first_name}} {{user.last_name}}</td>
+        <td class="d-flex justify-content-center">
           <!-- start Static modal -->
 
           <button type="button" class="btn btn-primary" (click)="staticModal.show()">Detail</button>
