@@ -47,10 +47,11 @@ In the second screen, it is displayed in orderly list, the users provided by the
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/user.PNG?raw=true" height="350">
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/userDetails.PNG?raw=true" height="350">
 
-Na última tela do API encontra-se as funções de: 
-* Novo Usuário
-* Atualizar Usuário 
-* Excluir Usuário
+On the last screen of the API are the functions of:
+
+* New user
+* Update User
+* Delete User
 
 Below are the functions and expected responses from the server.
 
