@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Temporario
+## Projeto
 
 I started the application by visiting the Inchurch website and application and studied the UX / UI design and technologies used to model the methodology of my development.
 
@@ -39,8 +39,9 @@ After this phase, I inspected the site for favicon and Inchurch logo.
   
 I created a CRUD for mobile App using Iphone X as base screen format.
 On the first screen, you will find the home prototype with:
-*Login
-Username: @inchurch, password: God2020
+
+* Login: Username: @inchurch, password: God2020
+
 In the second screen, it is displayed in orderly list, the users provided by the API and through a button the details are displayed.
 
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/user.PNG?raw=true" height="350">
