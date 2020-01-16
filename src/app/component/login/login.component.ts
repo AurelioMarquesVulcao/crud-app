@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   }
 
   doLogin() {
-    console.log(this.userinchurch);
+    console.log(this.userinchurch); // Delete when put to production
     this.authService.doLogin(this.userinchurch);
   }
 

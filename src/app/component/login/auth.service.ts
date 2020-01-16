@@ -35,9 +35,8 @@ export class AuthService {
     }
   }
 
-  userIsAuthenticated(){
+  userIsAuthenticated() {
     return this.userAuthenticated;
   }
 
 }
-
