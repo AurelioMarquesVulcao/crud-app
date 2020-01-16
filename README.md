@@ -56,7 +56,9 @@ On the last screen of the API are the functions of:
 Below are the functions and expected responses from the server.
 
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/addUser.PNG?raw=true" height="350">
+
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/updateUser.PNG?raw=true" height="350">
+
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/deleteUser.PNG?raw=true" height="350">
 
 I applied Agile Methodology in order to equalize the demands and thus create a favorable scenario for creation and development.

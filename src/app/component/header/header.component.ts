@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../login/auth.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor() { }
+  showMenu: boolean = false;
 
-  ngOnInit() {
+  constructor(private authservice: AuthService){
+
+  }
+
+  ngOnit(){
+    this.authservice.showMenuEmitter.subscribe(
+      show => this.showMenu = show
+    );
+
   }
 
 }

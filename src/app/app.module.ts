@@ -19,6 +19,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { FooterComponent } from './component/footer/footer.component';
 import { HeaderloginComponent } from './component/headerlogin/headerlogin.component';
 import { EdituserComponent } from './pages/edituser/edituser.component';
+import { AuthService } from './component/login/auth.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { EdituserComponent } from './pages/edituser/edituser.component';
     BsDropdownModule.forRoot(),
     ModalModule.forRoot()
   ],
-  providers: [HttpClient, HttpClientModule],
+  providers: [HttpClient, HttpClientModule, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

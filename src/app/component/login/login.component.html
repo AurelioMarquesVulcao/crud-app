@@ -7,12 +7,12 @@
           <h5 class="card-title text-center">Login</h5>
           <form class="form-signin">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <input [(ngModel)]="userinchurch.inputEmail" name="inputEmail" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
               <label for="inputEmail">Email address</label>
             </div>
 
             <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <input [(ngModel)]="userinchurch.inputPassword" name="inputPassword" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
               <label for="inputPassword">Password</label>
             </div>
 
@@ -20,18 +20,16 @@
               <input type="checkbox" class="custom-control-input" id="customCheck1">
               <label class="custom-control-label" for="customCheck1">Remember password</label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block text-uppercase">
-              <a href="user" class="text-white">Sing in</a>
+            <button (click)="doLogin()" type="button" class="btn btn-lg btn-primary btn-block text-uppercase">
+              Sing in
             </button>
-            <a href="user" class="pull-right need-help float-right ">Need help? </a><span class="clearfix"></span>
+            <a href="home" class="pull-right need-help float-right ">Need help? </a><span class="clearfix"></span>
             <hr class="my-4">
             <a href="https://www.facebook.com/"><button class="btn btn-lg btn-facebook btn-block text-uppercase"
                 type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button></a>
-            <a href="user" class="text-center new-account float-right">Create an account </a>
+            <a href="home" class="text-center new-account float-right">Create an account </a>
           </form>
-
         </div>
-
       </div>
     </div>
   </div>
