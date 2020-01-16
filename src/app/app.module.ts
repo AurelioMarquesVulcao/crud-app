@@ -20,6 +20,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HeaderloginComponent } from './component/headerlogin/headerlogin.component';
 import { EdituserComponent } from './pages/edituser/edituser.component';
 import { AuthService } from './component/login/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { AuthService } from './component/login/auth.service';
     BsDropdownModule.forRoot(),
     ModalModule.forRoot()
   ],
-  providers: [HttpClient, HttpClientModule, AuthService],
+  providers: [HttpClient, HttpClientModule, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -15,25 +15,29 @@ export class AuthService {
 
   showMenuEmitter = new EventEmitter<boolean>();
 
-  constructor( private router: Router) { }
+  constructor(private router: Router) { }
 
   doLogin(userinchurch: UserInchurch) {
 
     if (userinchurch.inputEmail === '@inchurch' &&
       userinchurch.inputPassword === 'God2020') {
 
-        this.userAuthenticated = true;
+      this.userAuthenticated = true;
 
-        this.showMenuEmitter.emit(true);
+      this.showMenuEmitter.emit(true);
 
-        this.router.navigate(['user']);
+      this.router.navigate(['user']);
 
-      } else {
-        this.userAuthenticated = false;
+    } else {
+      this.userAuthenticated = false;
 
-        this.showMenuEmitter.emit(false);
-      }
-
-      }
+      this.showMenuEmitter.emit(false);
+    }
   }
+
+  userIsAuthenticated(){
+    return this.userAuthenticated;
+  }
+
+}
 
