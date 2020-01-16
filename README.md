@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/home`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -41,6 +41,8 @@ I created a CRUD for mobile App using Iphone X as base screen format.
 On the first screen, you will find the home prototype with:
 
 * Login: Username: @inchurch, password: God2020
+
+<img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/readmeimages/Login.JPG?raw=true" height="350">
 
 In the second screen, it is displayed in orderly list, the users provided by the API and through a button the details are displayed.
 
