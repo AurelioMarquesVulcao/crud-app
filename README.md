@@ -64,6 +64,3 @@ Below are the functions and expected responses from the server.
 <img src="https://github.com/AurelioMarquesVulcao/crud-app/blob/master/src/assets/ReadmeImages/deleteUser.PNG?raw=true" height="350">
 
 I applied Agile Methodology in order to equalize the demands and thus create a favorable scenario for creation and development.
-
-I appreciate the opportunity to participate in the selection process.
-Thank you Inchurch Team
